@@ -1,3 +1,22 @@
 .results-btn {
     margin-bottom: 20px;
 }
+
+.sis-dictionary .search-field {
+    width: 100%;
+}
+
+.sis-dictionary .search-results {
+    width: 100%;
+    margin-top: 10px;
+    /*padding: 10px;*/
+}
+
+.sis-dictionary .search-results .word {
+    /*width: 50%;*/
+}
+
+.sis-dictionary .search-results .translation {
+    /*width: 49%;*/
+    /*text-align: right;*/
+}
