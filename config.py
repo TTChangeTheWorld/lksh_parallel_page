@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from classes import Day
 __author__ = 'TTChangeTheWorld'
 def get_config():

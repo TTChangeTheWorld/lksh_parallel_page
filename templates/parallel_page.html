@@ -16,73 +16,81 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <div class="container">
-        <div class="well" style="margin-top:20px">
-            <div class="row-fluid">
-                <div>
-                    <h1>
-                        ЛКШ.{{year}}.{{month}}.{{parallel_name}}
-                    </h1>
-                </div>
-               
-            </div>         
-        </div>
-        <a href="a/">
-            <div class="btn btn-primary btn-lg results-btn">
-                <h4>
-                    <b>
-                        Общая таблица результатов
-                    </b>
-                </h4>
-                
-            </div>
-        </a>
-        {% for info in additional_info %}
-            <div class="alert alert-info">
-                <b>
-                    {{info}}
-                </b>
-            </div>
-        {% endfor %}
-        <!--
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                6ой день
-            </div>
-        </div>-->
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h4 class="panel-title">
-                        <a>
-                            <b>Полезные ссылки:</b>
-                        </a>
-                    </h4>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well" style="margin-top:20px">
+                    <div class="row-fluid">
+                        <div>
+                            <h1>
+                                ЛКШ.{{year}}.{{month}}.{{parallel_name}}
+                            </h1>
+                        </div>
 
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                    <ul class="nav nav-pills nav-stacked">
-                        {%for link in usefull_links%}
-                        <li><a href="{{link[1]}}"> {{link[0]}} </a></li>
-                        {%endfor%}
-                    </ul>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <a href="a/">
+                    <div class="btn btn-primary btn-lg results-btn">
+                        <h4><b>Общая таблица результатов</b></h4>
+                    </div>
+                </a>
+                {% for info in additional_info %}
+                <div class="alert alert-info">
+                    <b>
+                        {{info}}
+                    </b>
+                </div>
+                {% endfor %}
+                <!--
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        6ой день
+                    </div>
+                </div>-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="panel-title">
+                            <a>
+                                <b>Полезные ссылки:</b>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked">
+                                {%for link in usefull_links%}
+                                <li><a href="{{link[1]}}"> {{link[0]}} </a></li>
+                                {%endfor%}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {% for day in days %}
-            <div class="panel panel-default">
-                <div class="panel-heading">
+                {% for day in days %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
 
-                    <h2 class="panel-title"><b>{{day.label}}</b></h2>
+                        <h2 class="panel-title"><b>{{day.label}}</b></h2>
+                    </div>
+                    <div>
+                        <ul class="nav nav-pills nav-justified">
+                            {% for link in day.links %}
+                            <li class="well well-sm"><a href="{{link[1]}}"> {{link[0]}} </a></li>
+                            {%endfor%}
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="nav nav-pills nav-justified">
-                        {% for link in day.links %}
-                        <li class="well well-sm"><a href="{{link[1]}}"> {{link[0]}} </a></li>
-                        {%endfor%}
-                    </ul>
+                {%endfor%}
+            </div>
+            <div class="col-md-3">
+                <div class="well">
+                    sidebar
                 </div>
             </div>
-            {%endfor%}
         </div>
+    </div>
 </body>
 </html>
