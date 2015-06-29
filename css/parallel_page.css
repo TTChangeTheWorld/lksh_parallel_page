@@ -6,8 +6,13 @@
     width: 100%;
 }
 
-.sis-dictionary .search-results-table {
+.sis-dictionary .search-results-container {
     width: 100%;
     margin-top: 10px;
+    max-height: 700px;
+    overflow: auto;
+}
+
+.sis-dictionary .search-results-container table {
     background: white;
 }
