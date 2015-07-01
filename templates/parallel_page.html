@@ -74,11 +74,14 @@
                         <h2 class="panel-title"><b>{{day.label}}</b></h2>
                     </div>
                     <div>
-                        <ul class="nav nav-pills nav-justified">
-                            {% for link in day.links %}
-                            <li class="well well-sm"><a href="{{link[1]}}"> {{link[0]}} </a></li>
-                            {%endfor%}
-                        </ul>
+                      {% for link in day.links %}
+                      <a class="day-link" href="{{link[1]}}">{{link[0]}}</a>
+                      {%endfor%}
+<!--                        <ul class="nav nav-pills nav-justified">-->
+                            <!--{% for link in day.links %}-->
+                            <!--<li class="well well-sm"><a href="{{link[1]}}"> {{link[0]}} </a></li>-->
+                            <!--{%endfor%}-->
+                        <!--</ul>-->
                     </div>
                 </div>
                 {%endfor%}

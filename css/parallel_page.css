@@ -16,3 +16,11 @@
 .sis-dictionary .search-results-container table {
     background: white;
 }
+
+.day-link {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
