@@ -30,25 +30,25 @@ def get_config():
     }
 
     config["days"] = reversed([
-        Day("День 1: Вступление",
+        Day("День 1: Язык Python 3",
             [
                 ("Условия", "https://ejudge.lksh.ru/archive/2014/08/Cpy/01/problems.pdf"),
                 ("Вход", "https://ejudge.lksh.ru/cgi-bin/new-client?contest_id=21501&locale_id=1"),
                 ("Таблица результатов", "https://ejudge.lksh.ru/ejudge/standings/021501.html"),
             ]),
-        Day("День 2: Продолжение",
+        Day("День 2: Арифметика",
             [
                 ("Условия", "https://ejudge.lksh.ru/archive/2014/08/Cpy/01/problems.pdf"),
                 ("Вход", "https://ejudge.lksh.ru/cgi-bin/new-client?contest_id=21501&locale_id=1"),
                 ("Таблица результатов", "https://ejudge.lksh.ru/ejudge/standings/021501.html"),
             ]),
-        Day("День 3: Уже почти конец",
+        Day("День 3: Линейный поиск и сортировки",
             [
                 ("Условия", "https://ejudge.lksh.ru/archive/2014/08/Cpy/01/problems.pdf"),
                 ("Вход", "https://ejudge.lksh.ru/cgi-bin/new-client?contest_id=21501&locale_id=1"),
                 ("Таблица результатов", "https://ejudge.lksh.ru/ejudge/standings/021501.html"),
             ]),
-        Day("День 4: Зачет",
+        Day("День 4: Рекурсия-1",
             [
                 ("Условия", "https://ejudge.lksh.ru/archive/2014/08/Cpy/01/problems.pdf"),
                 ("Вход", "https://ejudge.lksh.ru/cgi-bin/new-client?contest_id=21501&locale_id=1"),

@@ -1,3 +1,14 @@
+.header {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header h2 {
+    font-weight: bold;
+}
+
 .results-btn {
     margin-bottom: 20px;
 }
