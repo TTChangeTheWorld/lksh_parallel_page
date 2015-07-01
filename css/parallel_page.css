@@ -20,7 +20,7 @@
 .sis-dictionary .search-results-container {
     width: 100%;
     margin-top: 10px;
-    max-height: 700px;
+    max-height: 450px;
     overflow: auto;
 }
 
