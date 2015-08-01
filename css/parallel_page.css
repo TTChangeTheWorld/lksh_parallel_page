@@ -1,3 +1,37 @@
+.header {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header h2 {
+    font-weight: bold;
+}
+
 .results-btn {
-    margin-bottom:20px
+    margin-bottom: 20px;
+}
+
+.sis-dictionary .search-field {
+    width: 100%;
+}
+
+.sis-dictionary .search-results-container {
+    width: 100%;
+    margin-top: 10px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.sis-dictionary .search-results-container table {
+    background: white;
+}
+
+.day-link {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
